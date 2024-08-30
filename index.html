@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body class="bg-light">
+    <div class="container">
+        <div class="jumbotron bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false">Sign up</a>
+                    </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Login form -->
+                    <div class="tab-pane fade show active justify-content-center" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                        <div class="container">
+                        <form class="was-validated">
+                            <img class="card-img-top mt-2" width="120px" height="120px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIGZpbGw9Im5vbmUiIHI9IjI0IiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiLz48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjUwIiB3aWR0aD0iNTAiLz48cGF0aCBkPSJNMjkuOTMzLDM1LjUyOGMtMC4xNDYtMS42MTItMC4wOS0yLjczNy0wLjA5LTQuMjFjMC43My0wLjM4MywyLjAzOC0yLjgyNSwyLjI1OS00Ljg4OGMwLjU3NC0wLjA0NywxLjQ3OS0wLjYwNywxLjc0NC0yLjgxOCAgYzAuMTQzLTEuMTg3LTAuNDI1LTEuODU1LTAuNzcxLTIuMDY1YzAuOTM0LTIuODA5LDIuODc0LTExLjQ5OS0zLjU4OC0xMi4zOTdjLTAuNjY1LTEuMTY4LTIuMzY4LTEuNzU5LTQuNTgxLTEuNzU5ICBjLTguODU0LDAuMTYzLTkuOTIyLDYuNjg2LTcuOTgxLDE0LjE1NmMtMC4zNDUsMC4yMS0wLjkxMywwLjg3OC0wLjc3MSwyLjA2NWMwLjI2NiwyLjIxMSwxLjE3LDIuNzcxLDEuNzQ0LDIuODE4ICBjMC4yMiwyLjA2MiwxLjU4LDQuNTA1LDIuMzEyLDQuODg4YzAsMS40NzMsMC4wNTUsMi41OTgtMC4wOTEsNC4yMWMtMS4yNjEsMy4zOS03LjczNywzLjY1NS0xMS40NzMsNi45MjQgIGMzLjkwNiwzLjkzMywxMC4yMzYsNi43NDYsMTYuOTE2LDYuNzQ2czE0LjUzMi01LjI3NCwxNS44MzktNi43MTNDMzcuNjg4LDM5LjE4NiwzMS4xOTcsMzguOTMsMjkuOTMzLDM1LjUyOHoiLz48L3N2Zz4=" alt="Login Icon" />
+                            <p class="display-4 text-center">Login</p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-6">
+                            <div class="form-group">
+                                <label for="logName">Username</label>
+                                <input type="text" class="form-control is-invalid" id="logName" placeholder="Required Username" required></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="logPssw">Password</label>
+                                <input type="password" class="form-control is-invalid" id="logPssw" placeholder="Required Password" required></input>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Login</button>
+                            </div>
+                            <div class="col-3"></div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <!-- End Login -->
+                    <div class="tab-pane fade justify-content-center" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+                        <form class="was-validated">
+                            <img class="card-img-top mt-2" width="120px" height="120px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIGZpbGw9Im5vbmUiIHI9IjI0IiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiLz48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjUwIiB3aWR0aD0iNTAiLz48cGF0aCBkPSJNMjkuOTMzLDM1LjUyOGMtMC4xNDYtMS42MTItMC4wOS0yLjczNy0wLjA5LTQuMjFjMC43My0wLjM4MywyLjAzOC0yLjgyNSwyLjI1OS00Ljg4OGMwLjU3NC0wLjA0NywxLjQ3OS0wLjYwNywxLjc0NC0yLjgxOCAgYzAuMTQzLTEuMTg3LTAuNDI1LTEuODU1LTAuNzcxLTIuMDY1YzAuOTM0LTIuODA5LDIuODc0LTExLjQ5OS0zLjU4OC0xMi4zOTdjLTAuNjY1LTEuMTY4LTIuMzY4LTEuNzU5LTQuNTgxLTEuNzU5ICBjLTguODU0LDAuMTYzLTkuOTIyLDYuNjg2LTcuOTgxLDE0LjE1NmMtMC4zNDUsMC4yMS0wLjkxMywwLjg3OC0wLjc3MSwyLjA2NWMwLjI2NiwyLjIxMSwxLjE3LDIuNzcxLDEuNzQ0LDIuODE4ICBjMC4yMiwyLjA2MiwxLjU4LDQuNTA1LDIuMzEyLDQuODg4YzAsMS40NzMsMC4wNTUsMi41OTgtMC4wOTEsNC4yMWMtMS4yNjEsMy4zOS03LjczNywzLjY1NS0xMS40NzMsNi45MjQgIGMzLjkwNiwzLjkzMywxMC4yMzYsNi43NDYsMTYuOTE2LDYuNzQ2czE0LjUzMi01LjI3NCwxNS44MzktNi43MTNDMzcuNjg4LDM5LjE4NiwzMS4xOTcsMzguOTMsMjkuOTMzLDM1LjUyOHoiLz48L3N2Zz4=" alt="Sign up icon" srcset="">
+                            <p class="display-4 text-center">Sign up</p>
+                            <hr>
+                            <div class="form-row">                            
+                                <div class="form-group col-md-6">
+                                <label for="regName">First Name</label>
+                                    <input type="text" class="form-control is-invalid" id="regName" placeholder="Required First Name" required></input>
+                                    <div class="invalid-feedback">
+                                    Please enter your first Name.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="regLname">Last Name</label>
+                                    <input type="text" class="form-control is-invalid" id="regLname" placeholder="Required Last Name" required></input>
+                                    <div class="invalid-feedback">
+                                    Please enter your last name.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">                            
+                                <div class="form-group col-md-6">
+                                <label for="regUsername">Username</label>
+                                    <input type="text" class="form-control is-invalid" id="regUsername" placeholder="Required Username" required></input>
+                                    <div class="invalid-feedback">
+                                    Please create a username.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="regEmail">Email Address</label>
+                                    <input type="email" class="form-control is-invalid" id="regEmail" placeholder="Required Email Address" required></input>
+                                    <div class="invalid-feedback">
+                                    Please enter your Email address.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">                            
+                                <div class="form-group col-md-6">
+                                <label for="regID">ID number</label>
+                                    <input type="text" class="form-control is-invalid" id="regID" placeholder="Required ID number" required></input>
+                                    <div class="invalid-feedback">
+                                    Please enter your ID number.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="regNumb">Contact Number</label>
+                                    <input type="text" class="form-control is-invalid" id="regNumb" placeholder="Required Contact Number" required></input>
+                                    <div class="invalid-feedback">
+                                    Please enter Contact Number.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">                            
+                                <div class="form-group col-md-6">
+                                <label for="regPassw">Password</label>
+                                    <input type="password" class="form-control is-invalid" id="regPassw" placeholder="Required Password" required></input>
+                                    <div class="invalid-feedback">
+                                    Please Create a Password.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="regConfPassw">Confirm Password</label>
+                                    <input type="password" class="form-control is-invalid" id="regConfPassw" placeholder="Confirm Password" required></input>
+                                    <div class="invalid-feedback">
+                                    Please Confirm Password.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">                            
+                                <div class="form-group col-md-4">
+                                    <label for="validationCustom04">Gender</label>
+                                    <select class="custom-select" id="validationCustom04" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select your gender.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="validationCustom04">Marital Status</label>
+                                    <select class="custom-select" id="validationCustom04" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Single</option>
+                                        <option>Married</option>
+                                        <option>Widowed</option>
+                                        <option>Divorced</option>
+                                        <option>Separated</option>
+                                        <option>Registered Partnership</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state.
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="validationCustom04">Title</label>
+                                    <select class="custom-select" id="validationCustom04" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Mr</option>
+                                        <option>Mrs</option>
+                                        <option>Ms</option>
+                                        <option>Dr</option>
+                                        <option>Prof</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select your title.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                            <div class="col-3"></div>
+                            <button type="submit" class="btn btn-success col-6">Sign up</button>
+                            <div class="col-3"></div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
